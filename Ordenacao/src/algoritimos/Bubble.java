@@ -1,4 +1,4 @@
-package bubble;
+package algoritimos;
 
 import java.util.LinkedList;
 
