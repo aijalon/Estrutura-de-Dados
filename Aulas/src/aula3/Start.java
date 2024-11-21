@@ -5,14 +5,14 @@ import java.util.Arrays;
 public class Start {
 
 	public static void main(String[] args) {
-		Vetor teste = new Vetor(2);
+		Vetor teste = new Vetor(10);
 		
 		try {
 			teste.adicionarElemento("A");
 			teste.adicionarElemento("B");
-			teste.adicionarElemento("C");
+			teste.adicionarElemento("C",0);
 			
-		} catch (Exception e) {
+		}catch (Exception e) {
 			e.printStackTrace();
 		}
 		

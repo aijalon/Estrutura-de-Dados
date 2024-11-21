@@ -27,5 +27,17 @@ public class Vetor {
 
 	}
 
+	public void adicionarElemento(String elemento, int posicao) {
+		if(posicao<0 || posicao>this.tamanho) {
+			throw new IllegalArgumentException("Posição inválida");
+		}
+		
+		for(int i = this.tamanho; i>posicao; i--) {
+			this.vetor[i] = this.vetor[i-1];
+		}
+		this.vetor[posicao] = elemento;
+		this.tamanho++;
+	}
+	
 	
 }
